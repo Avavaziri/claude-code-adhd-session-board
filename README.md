@@ -10,7 +10,7 @@ session's question from its card.
 
 ![The session board with six sample sessions](docs/board.png)
 
-<sub>Sample data. The project and session names are made up.</sub>
+<sub>An illustration with made-up sessions. The real pane uses the desktop app's own styling.</sub>
 
 Each card shows:
 
