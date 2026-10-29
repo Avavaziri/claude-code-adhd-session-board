@@ -12,7 +12,11 @@ export type Summary = {
   doing: string
   waitingOn: string | null
   needsYou: boolean
+  question: string | null
+  answers: string[]
 }
+
+export type Reply = { text: string; at: number }
 
 export type Card = {
   id: string
@@ -25,6 +29,8 @@ export type Card = {
   git?: GitWork
   doing: string
   waitingOn: string | null
+  question: string | null
+  answers: string[]
   status: CardStatus
 }
 
@@ -38,6 +44,8 @@ export type Board = {
   cards: Card[]
   checkout?: { branch: string; uncommitted: number }
   updatedAt?: number
+  since?: string
+  olderHidden?: number
 }
 
 declare module 'claude-code' {
@@ -45,7 +53,10 @@ declare module 'claude-code' {
     'session-board': {
       board: Shaped<Board>
       showDone: boolean
+      picked: string
       asked: Shaped<Record<string, number>>
+      replies: Shaped<Record<string, Reply>>
+      updates: Shaped<Record<string, Reply>>
     }
   }
 }

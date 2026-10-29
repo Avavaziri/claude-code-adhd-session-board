@@ -11,11 +11,18 @@ Each card shows:
 - what it is waiting on (CI, a review, a merge, your decision)
 - its branch, its pull request, and any work not yet merged: files not committed,
   commits not in the base branch, commits not pushed
-- an **Ask for update** button that messages the session and asks for its status
+- when the session asked you something: the question, with one-click answers
+  and a box to type your own reply
+- an **Ask for update** button that messages the session and asks for its
+  status. The reply shows on the card, not in your chat.
 
 Cards are sorted so the sessions that need you come first. Finished sessions
 (merged PR and a clean worktree, or idle for 7 days) are hidden behind
 **Show N done**.
+
+The **Show** list picks how far back to look: Today (the default), Since
+yesterday, any of the last 7 days, or All dates. A session that is working
+right now always shows.
 
 ## Requirements
 
@@ -56,7 +63,9 @@ In the desktop app: click **+** next to the prompt box, then **Plugins**,
    }
    ```
 
-4. Start a new session. Sessions already open do not pick it up.
+4. To reload the board when its files change, also add
+   `"CLAUDE_CODE_PLUGIN_DIR_WATCH": "1"` under `env`.
+5. Start a new session. Sessions already open do not pick it up.
 
 ## Use
 
