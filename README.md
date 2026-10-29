@@ -4,6 +4,14 @@ A Claude Code mod for people who run several Claude sessions on one project.
 It opens a panel beside the chat with one card per session, so you can manage
 them like a small team.
 
+Running ten sessions at once? The board shows which ones need you, which have
+work that is not merged, and what each one is waiting on. You can answer a
+session's question from its card.
+
+![The session board with six sample sessions](docs/board.png)
+
+<sub>Sample data. The project and session names are made up.</sub>
+
 Each card shows:
 
 - the session's title and status: **Needs you**, **Unmerged work**, **Working** or **Idle**
@@ -35,7 +43,7 @@ right now always shows.
 At the prompt of a terminal Claude Code session:
 
 ```
-/plugin install session-board --marketplace Avavaziri/session-board
+/plugin install session-board --marketplace Avavaziri/Claude-code-Multi-Session-Panel
 ```
 
 Answer `y` to add the marketplace, then pick the user scope.
@@ -43,11 +51,11 @@ Answer `y` to add the marketplace, then pick the user scope.
 From a shell:
 
 ```bash
-claude plugin install session-board --marketplace Avavaziri/session-board
+claude plugin install session-board --marketplace Avavaziri/Claude-code-Multi-Session-Panel
 ```
 
 In the desktop app: click **+** next to the prompt box, then **Plugins**,
-**Add marketplace**, enter `Avavaziri/session-board`, then **Add plugin**.
+**Add marketplace**, enter `Avavaziri/Claude-code-Multi-Session-Panel`, then **Add plugin**.
 
 ### Run it from a local folder instead
 
