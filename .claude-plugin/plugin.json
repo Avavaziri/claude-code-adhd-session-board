@@ -1,0 +1,7 @@
+{
+  "name": "session-board",
+  "version": "0.1.0",
+  "description": "A pane of cards, one per Claude session on a project: what it is doing, what it waits on, and its unmerged work.",
+  "types": "./types/index.d.ts",
+  "license": "MIT"
+}
