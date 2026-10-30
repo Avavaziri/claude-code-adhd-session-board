@@ -1,4 +1,4 @@
-# Session board
+# Session Board: an ADHD-friendly manager view for Claude Code
 
 A Claude Code mod for people who run several Claude sessions on one project.
 It opens a panel beside the chat with one card per session, so you can manage
@@ -43,7 +43,7 @@ right now always shows.
 At the prompt of a terminal Claude Code session:
 
 ```
-/plugin install session-board --marketplace Avavaziri/Claude-code-Multi-Session-Panel
+/plugin install session-board --marketplace Avavaziri/claude-code-adhd-session-board
 ```
 
 Answer `y` to add the marketplace, then pick the user scope.
@@ -51,11 +51,11 @@ Answer `y` to add the marketplace, then pick the user scope.
 From a shell:
 
 ```bash
-claude plugin install session-board --marketplace Avavaziri/Claude-code-Multi-Session-Panel
+claude plugin install session-board --marketplace Avavaziri/claude-code-adhd-session-board
 ```
 
 In the desktop app: click **+** next to the prompt box, then **Plugins**,
-**Add marketplace**, enter `Avavaziri/Claude-code-Multi-Session-Panel`, then **Add plugin**.
+**Add marketplace**, enter `Avavaziri/claude-code-adhd-session-board`, then **Add plugin**.
 
 ### Run it from a local folder instead
 
